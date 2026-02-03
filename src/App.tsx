@@ -1,10 +1,9 @@
-"use client";
 import { useState } from "react";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
-  const yesButtonSize = noCount * 20 + 16;
+  const yesButtonSize = Math.min(noCount * 20 + 16, 96);
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
@@ -20,9 +19,9 @@ export default function Page() {
       "What about a cheese cake",
       "PLEASE Klenam",
       "But :*(",
-      "hey dzeani",
-      "please babe",
-      "Gblɔ be ɛ̃",
+      "Hey dzeani",
+      "Please babe",
+      "I beg you",
       ":((((",
       "PRETTY PLEASE",
       "Estoy muerto",
@@ -36,26 +35,28 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! You made my day Wendy!! 🎉💖</div>
-          <div></div>
-          
-          <div className="my-4 text-4xl font-bold"><p>
-            Made with love and a sprinkle of creativity by KAY BURNA 💖✨. 
-           
-        </p></div>
+          <img
+            alt="Two bears kissing"
+            src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
+          />
+          <div className="my-4 text-4xl font-bold">
+            WOOOOOO!!! You made my day Wendy!!
+          </div>
+          <div className="my-4 text-4xl font-bold">
+            Made with love and a sprinkle of creativity by KAY BURNA.
+          </div>
         </>
       ) : (
-         
         <>
           <img
             className="h-[200px]"
+            alt="Bear holding roses"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
           <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
             <button
-              className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
+              className="mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700"
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
@@ -71,10 +72,5 @@ export default function Page() {
         </>
       )}
     </div>
-    
   );
 }
-<p>
-            Made with love and a sprinkle of creativity by KAY BURNA 💖✨. 
-           
-        </p>
