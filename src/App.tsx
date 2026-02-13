@@ -17,14 +17,13 @@ export default function Page() {
       "Pretty please",
       "With a chocolate",
       "What about a cheese cake",
-      "PLEASE Klenam",
+      "What about 🌷🌷🌷🌷🌺🌺🌺",
       "But :*(",
-      "Hey dzeani",
-      "Please babe",
-      "I beg you",
+      "you sure ?",
+      "😂😂😂😂😂",
       ":((((",
       "PRETTY PLEASE",
-      "Estoy muerto",
+      "Take Care love",
       "No :(",
     ];
 
@@ -40,10 +39,10 @@ export default function Page() {
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
           />
           <div className="my-4 text-4xl font-bold">
-            WOOOOOO!!! You made my day Wendy!!
+            WOOOOOO!!! You made my day Connie kay!!
           </div>
-          <div className="my-4 text-4xl font-bold">
-            Made with love and a sprinkle of creativity by KAY BURNA.
+          <div className="done">
+            Made with love and a sprinkle of creativity by Kay Burna.
           </div>
         </>
       ) : (
@@ -53,7 +52,7 @@ export default function Page() {
             alt="Bear holding roses"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">Will you be my Valentine Connie?</h1>
           <div className="flex items-center">
             <button
               className="mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700"
